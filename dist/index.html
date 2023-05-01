@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortress Database</title>
+</head>
+<body>
+    <h1>Fortress Data List</h1>
+
+    <h2>Report</h2>
+
+    <form class="add">
+        <label for="scamtype">ScamType:</label>
+        <input type="text" name="scamtype" required>
+        <label for="info">More information:</label>
+        <input type="text" name="moreinfo" required>
+        <label for="author">Lower Age Range:</label>
+        <input type="number" name="lowagerange" required>
+        <label for="author">Upper Age Range:</label>
+        <input type="number" name="upagerange" required>
+        
+
+        <button>Add a report</button>
+    </form>
+
+    <form class="delete">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+    
+        <button>Delete a report</button>
+      </form>
+
+    <form class="update">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+    
+        <button>Update a report</button>
+      </form>
+
+      <h2>Filters</h2>
+
+      <form class="recent">
+    
+        <button>By Most Recent</button>
+      </form>
+
+      <form class="popular">
+    
+          <button>By Most Popular</button>
+      </form>
+
+      <form class="scams">
+    
+        <button>By Scams</button>
+    </form>
+
+     <ul id="reportlist"></ul> 
+
+    <h2>Sign Up/ Log in</h2>
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email"name="email">
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <button>signup</button>
+    </form>
+
+    <form class="login">
+      <label for="email">email:</label>
+      <input type="email"name="email">
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <button>login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    <h2>Unsubscribing</h2>
+    <button class="unsub">unsubscribe from db/auth changes</button>
+    
+    <script src="bundle.js"></script>
+</body>
+</html>
